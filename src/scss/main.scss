@@ -1,0 +1,89 @@
+@import "./searchbar";
+@import "./gallery";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+    font-family: "Roboto", sans-serif !important;
+    background: #0f0c29; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #24243e,
+        #302b63,
+        #0f0c29
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #24243e,
+        #302b63,
+        #0f0c29
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0rem 1.5rem;
+    .searchbar-container {
+        display: flex;
+        width: 100%;
+    }
+    @media screen and (max-width: 576px) {
+        padding: 0.5rem;
+    }
+    .gallery-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    .clear {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        button {
+            padding: 5px 30px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            text-transform: uppercase;
+            font-size: 1.2em;
+            background-color: gray;
+            letter-spacing: 1px;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            &:hover {
+                outline: none;
+                border: none;
+            }
+            &:active {
+                top: 1px;
+                box-shadow: 0 1px 0 gray;
+            }
+            @media screen and (max-width: 576px) {
+                font-size: 1em;
+                padding: 5px 15px;
+            }
+        }
+    }
+    .title {
+        color: white;
+        margin-bottom: 1rem;
+        font-size: 2em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .hearts {
+        width: 15%;
+        height: auto;
+        margin-top: 30vh;
+        @media screen and (max-width: 576px) {
+            width: 40%;
+        }
+    }
+}
