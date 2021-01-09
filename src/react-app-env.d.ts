@@ -4,7 +4,3 @@ declare namespace NodeJS {
         REACT_APP_ACCESSKEY: string;
     }
 }
-declare module "react-grid-gallery" {
-    function Gallery(images: any): JSX.Element;
-    export = Gallery;
-}
